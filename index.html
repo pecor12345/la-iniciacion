@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia solo para valientes</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+
+</head>
+
+<body>
+    <div id='pageOne'>
+        <!-- Cabecera de pagina 1-->
+        <h1 class="cabecera"> Bienvenido </h1>
+        <div class="siteatreves">
+            <p>Si te atreves a resolver esta trivia</p>
+            <p>escribe tu nombre y dale continuar...</p>
+            <p>sino mejor retirate por tu bien jajajaja</p>
+            <h1> Solo para valientes</h1>
+            <!-- Input text-->
+            <label for="fname">Nombre o Nickname:</label>
+            <input type="text" id="fname" name="fname">
+        </div>
+        <!-- <div class="loquetuquieras"><h1> ... </h1></div> -->
+        <div class="alineacionboton">
+            <button class="boton" onclick="gaytorade()">
+                Me retiro, no puedo
+                <button class="boton2" onclick="funcion()">
+                    Continuo, soy valiente
+                </button>
+        </div>
+    </div>
+    <div id="pageTwo">
+        <h1 class="cabecera1">Pregunta numero 1</h1>
+        <!-- Cabecera de pagina 2-->
+        <h1></h1>
+        <h2> Cual es el nombre de la abuela materna de Keiko Fujimori? </h2>
+        <div class="opciones1">
+            <input id="Susana" type="checkbox" name="nombre" value="1">Susana
+            <br>
+            <input type="checkbox" name="nombre" value="2">Li Ping
+            <br>
+            <input type="checkbox" name="nombre" value="3">Xon Xo Lin
+            <br>
+        </div>
+        <!-- <div class="loquetuquieras"><h1> ... </h1></div> -->
+        <div class="alineacionboton1">
+            <button class="boton" onclick="gaytorade()">
+                Me retiro, está dificil
+                <button class="boton2" onclick="funcion2()">
+                    Continuo, Sí puedo
+                </button>
+        </div>
+    </div>
+    <div id="page3">
+        <h1 class="cabecera2">Pregunta numero 2</h1>
+        <!-- Cabecera de pagina 3-->
+        <h1></h1>
+        <h2> Cual es el segundo apellido del "Profe Castillo"? </h2>
+        <div class="opciones2">
+            <input type="checkbox" name="nombre" value="1">Quispe
+            <br>
+            <input type="checkbox" name="nombre" value="2">Meier
+            <br>
+            <input id="Ninguna de las anteriores" type="checkbox" name="nombre" value="3">Ninguna de las anteriores
+            <br>
+        </div>
+        <!-- <div class="loquetuquieras"><h1> ... </h1></div> -->
+        <div class="alineacionboton2">
+            <button class="boton" onclick="gaytorade()">
+                Me rindo, ya no puedo mas
+                <button class="boton2" onclick="funcion3()">
+                    Continuo, Sí puedo
+                </button>
+        </div>
+    </div>
+    <div id="page4">
+        <h1 class="cabecera3">Pregunta final</h1>
+        <!-- Cabecera de pagina 4-->
+        <h1></h1>
+        <h2> Cual es mi segundo nombre? </h2>
+        <div class="opciones3">
+            <input type="checkbox" name="nombre" value="1">Benjamin
+            <br>
+            <input type="checkbox" name="nombre" value="2">Pablo
+            <br>
+            <input id="Ninguna de las anteriores" type="checkbox" name="nombre" value="3">Ninguna de las anteriores
+            <br>
+        </div>
+        <!-- <div class="loquetuquieras"><h1> ... </h1></div> -->
+        <div class="alineacionboton2">
+            <button class="boton" onclick="gaytorade()">
+                Me rindo, en serio
+                <button class="boton2" onclick="pagefinal()">
+                    Por fin acabé
+                </button>
+        </div>
+    </div>
+        <div id='pagefinal'>
+            <h1 class="cabecerafinal"> GRACIAS POR PARTICIPAR </h1>
+            <!-- Cabecera de pagina final-->
+            <div class="gracias">
+            <p> Si llegaste hasta acá eres un genio. </p>
+            <p> Te invito a esperar la segunda parte... </p>
+            <h2>RESULTADOS FINALES </h2>
+            <div class="resul" id="resultados">
+                
+            </div>
+        
+        </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
